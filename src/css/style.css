@@ -1,0 +1,495 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing:border-box;
+    font-family: 'Barlow', sans-serif;
+}
+html {
+	height:100%;
+	scroll-behavior: smooth;
+    background: #f4f4f4;
+    font-family: 'Barlow', sans-serif;
+    background-attachment: fixed !important;
+    min-height: 100%;
+}
+* {    
+  	scrollbar-color: #bababa #777;
+  	scrollbar-width: thin;
+}
+*::-webkit-scrollbar {
+  width: 4px;
+}
+/* Track */
+*::-webkit-scrollbar-track {
+  background: #E3E3E3; 
+}
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: #B0B0B0; 
+}
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+body {
+	line-height: 1;
+	height:100%;
+	background:#f4f4f4;
+	overflow-x:hidden;
+    font-family: 'Barlow', sans-serif;
+}
+a, button, input[type=submit], input[type=button] {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	cursor:pointer;
+    font-family: 'Barlow', sans-serif;
+}
+
+#wrapper {
+	padding:70px 0 40px 0;
+	margin:0;
+	float:left;
+	width:100%;
+}
+
+.inner {
+	padding:0;
+	margin:auto;
+	max-width:1140px;
+	width:95%;
+}
+
+.content {
+	padding:0;
+	margin:0;
+	float:left;
+	width:100%;
+	position:relative;
+}
+
+.main {
+	padding:0;
+	margin:0;
+	float:left;
+	width:100%;
+	position:relative;
+}
+
+.leftfloat {float:left !important;}
+.rightfloat {float:right !important;}
+.loginregbg {background: url(../images/login-reg-bg.jpg) 50% 50% no-repeat;background-size: cover;}
+
+/* ---------------------------------------- HEADER STARTS HERE ---------------------------------------- */
+
+#tophead {padding: 12px 0;background: #fff;box-shadow: rgba(0,0,0,0.04) 0 4px 8px;position: fixed;top: 0;width: 100%;left: 0;z-index: 101;}
+#tophead .row {margin-bottom: 0;}
+#logo img {height: 40px;width: auto;display: block;}
+.smallscreen {display: none !important;}
+
+/* ---------------------------------------- HEADER ENDS HERE ---------------------------------------- */
+
+/* ------------------------------------ NAVIGATION STARTS HERE ------------------------------------ */
+
+.topnav {text-align: right;}
+.topnav ul {text-align: right;}
+.topnav ul li {float: none;display: inline-block;margin-left: 24px;position: relative;}
+.topnav ul li a {display: block;height: 32px;line-height: 32px;font-size: 14px;font-weight: 500;color: #434343;vertical-align: middle;}
+.topnav ul li a i {font-size: 24px;vertical-align: middle;margin-right: 4px;}
+.topnav ul li a:hover {color: #0376b8;}
+.topnav ul li a img {height: 40px;border-radius: 50%;height: 40px;vertical-align: middle;border:#0376b8 2px solid;}
+.topnav ul li.splmenu a {color: #0376b8;}
+.topnav ul li.splmenu a:hover {color: #000;}
+.personalinks ul {position: fixed;left: auto;top: 92px;border-radius: 8px;box-shadow: rgba(0,0,0,0.04) 4px 4px 8px;display: block;width: 12.27%;background: #fff;padding: 4px 0 0 !important;}
+.personalinks ul li {display: block;margin-bottom: 0;border-bottom: 1px solid rgba(0,0,0,.15);}
+.personalinks ul li:last-child {border: none !important;}
+.personalinks ul li a {font-size: 12px;color: #444;vertical-align: middle;font-weight: 500;padding: 12px 16px !important;display: block;}
+.personalinks ul li a:hover {color:#0376b8;}
+.personalinks ul li a i {font-size: 16px;margin-right: 4px;vertical-align: middle;}
+
+/* ------------------------------------ NAVIGATION ENDS HERE ------------------------------------ */
+
+/* ---------------------------------------- BODY STARTS HERE ---------------------------------------- */
+
+.pollholderrightpad {
+    /*padding-right: 40px;*/
+    width: 100%;
+}
+.pollblock {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: rgba(0,0,0,0.04) 4px 4px 8px;
+    margin-top: 24px;
+}
+.allsidepad {
+    padding: 20px;
+}
+.pollblock h6 {
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: #ddd 1px solid;
+    padding: 16px;
+    position: relative;
+}
+.pollblock h6 samp.label {
+    position: absolute;
+    left: 57px;
+    top: 12px;
+    font-size: 10px;
+    font-weight: 500;
+    font-family: "Barlow";
+    color: #999;
+}
+.pollblock h6 a.dpcls {
+    color: #666;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 12px;
+}
+.pollblock h6 a.dpcls2 {
+    color: #666;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 0px;
+}
+.pollblock h6 a.dpcls img {
+    height: 32px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 4px;
+    border:#0376b8 2px solid;
+    margin-top: -12px;
+}
+.pollblock h6 span {
+    float: right;
+    font-size: 16px;
+    margin-top: 0;
+}
+.pollblock h6 span i {
+    margin-left: 12px;
+}
+.pollblock h6 span samp, .pollblock h6 span a {
+    font-family: "Barlow";
+    font-size: 10px;
+    background: #090;
+    color: #fff;
+    padding: 0 8px !important;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 12px;
+}
+.pollblock h6 span samp.finished, .pollblock h6 span a.finished {
+    background: #666;
+}
+.pollblock h6 span samp i, .pollblock h6 span a i {
+    font-size: 0;
+    display: none;
+}
+.pollblock h6 span samp.status, .pollblock h6 span a.status {
+    vertical-align: middle;
+}
+.pollblock h6 span samp.status.bluebtn, .pollblock h6 span a.status.bluebtn {
+    background: #0376B8;
+}
+.pollblock h6 span samp.status.redbtn, .pollblock h6 span a.status.redbtn {
+    background: #d00;
+}
+.pollblock h6 span {
+    position: relative;
+}
+.morelinkdots {
+    display: inline-block;
+    margin-top: 6px;
+}
+.morelinkdots2 {
+    display: inline-block;
+    margin-top: 0;
+}
+.morediv {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 32px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 12px;
+    width: 150px;
+    box-shadow: rgba(0,0,0,0.3) 2px 2px 6px;
+    color: #000;
+}
+.pollblock h6 span a:hover .morediv {
+    display: block;
+}
+.pollholder {
+    padding: 16px;
+}
+.pollmeta {
+    padding: 12px 16px 16px;
+    border-top: #ddd 1px solid;
+}
+.pollmeta a {
+    font-size: 12px;
+    font-weight: 500;
+    color: #666;
+    margin-right: 20px;
+    vertical-align: middle;
+    margin-top: 0;
+}
+.pollmeta a i {
+    vertical-align: middle;
+    margin-right: 4px;
+}
+.right-panel h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding: 16px 16px 0;
+}
+.right-panel li {
+    border-top: 1px solid rgba(0,0,0,.15);
+}
+.right-panel li a {
+    color: #0376b8;
+    font-size: 12px;
+    font-weight: 500;
+    display: block;
+    padding: 12px 16px;
+}
+.whiteroundshadow {border-radius: 8px;box-shadow: rgba(0,0,0,0.04) 4px 4px 8px;display: block;width: 100%;background: #fff;margin-top: 24px;}
+.loginregholder {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.loginregholder h5 {
+    margin-top: 60px;
+    margin-bottom: 48px;
+    font-weight: 600;
+}
+.loginregholder p.loginbtn {
+    margin-top: 16px;
+}
+.loginregholder p.loginbtn a {display: inline-block;vertical-align: middle;padding: 8px 16px;border: #0376B8 2px solid;border-radius: 24px;font-size: 18px;color: #0376B8;font-weight: 600;}
+.loginregholder p.loginbtn a img {max-height: 24px;width: auto;display: inline-block;margin-right: 8px;vertical-align: middle;}
+.loginregholder p.loginbtn a:hover {background: #fff;}
+.loginreg h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 8px;
+    padding: 0 0 0 10px;
+}
+.loginreg label {
+    font-size: 16px;
+    margin-bottom: 12px;
+    display: block;
+    color: #666;
+    margin-top: 12px;
+}
+.loginreg input[type=text], .loginreg input[type=password] {
+    border: #bbb 1px solid !important;
+    padding: 0 16px !important;
+    box-sizing: border-box !important;
+    border-radius: 4px !important;
+    height: 40px !important;
+    line-height: 40px !important;
+    font-family: 'Barlow', sans-serif;
+    background: #fff !important;
+}
+.loginreg input[type=submit] {
+    border: none !important;
+    padding: 0 24px !important;
+    border-radius: 4px !important;
+    height: 40px !important;
+    line-height: 40px !important;
+    color: #fff !important;
+    background: #0376b8 !important;
+    font-size: 20px;
+    margin-top: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Barlow', sans-serif;
+    margin-right: 24px;
+}
+.loginreg input[type=submit]:hover {
+    background: #000 !important;
+}
+.loginlinkcls {
+    color: #0376b8;
+    font-weight: 500;
+}
+.loginlinkcls:hover {
+    color: #000;
+}
+.accountmeta {
+    margin-top: 40px;
+    font-size: 20px;
+}
+.accountmeta a {
+    color: #0376b8;
+    font-weight: 500;
+}
+.accountmeta a:hover {
+    color: #000;
+}
+#profilelinks {
+    width: 250px;
+    right: 0;
+    top: 52px;
+    position: absolute;
+    z-index: 101;
+    background: #fff;
+    padding: 0;
+    border-radius: 0 0 8px 8px;
+    box-shadow: rgba(0,0,0,0.04) 0 4px 8px;
+    text-align: left;
+    max-height: 500px;
+    overflow-y: auto;
+}
+#notifications {
+    width: 250px;
+    right: -20px;
+    top: 50px;
+    position: absolute;
+    z-index: 101;
+    background: #fff;
+    padding: 0;
+    border-radius: 0 0 8px 8px;
+    box-shadow: rgba(0,0,0,0.04) 0 6px 8px;
+    text-align: left;
+    max-height: 500px;
+    overflow-y: auto;
+}
+#profilelinks ul, #notifications ul {
+    text-align: left;
+    width: 100%;
+}
+#profilelinks ul li {
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    line-height: 1.25;
+    border-top: #ddd 1px solid;
+}
+#notifications ul li {
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    line-height: 1.25;
+    height: auto;
+    border-top: #ddd 1px solid;
+}
+#profilelinks ul li a {
+    padding: 0 16px;
+    height: auto;
+}
+#notifications ul li a {
+    padding: 0px 16px;
+    font-size: 14px;
+    height: auto;
+    font-weight: 300;
+    color: #666;
+}
+#notifications ul li a.unread {
+    font-weight: 500;
+    color: #0376b8;
+}
+#profilelinks ul li a:hover, #notifications ul li a:hover {
+    background: #e3f2f4;
+}
+#profilelinks ul li i {
+    font-size: inherit;
+    width: 20px;
+}
+#profilecard {
+    padding: 16px;
+    vertical-align: middle;
+}
+#profilecard h6 {
+    font-weight: 600;
+}
+#profilecard h6 img {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-right: 8px;
+    border:#0376b8 2px solid;
+}
+#clearnotifications h6 {padding: 8px 16px;font-weight: 600;}
+#clearnotifications h6 a {font-size: 12px;float: right;margin:8px 0 0;height: auto;line-height: 1px;color: #0376b8;}
+#loginpopup {position: fixed;left: 0;top: 0;z-index: 1001;width: 100%;height: 100%;background: rgba(0,0,0,0.8);padding: 0;}
+.popupin {width: 100%;height: 100%;line-height: 100%;position: relative;text-align: center;vertical-align: middle;}
+.popupin form {width: 95%;max-width: 400px;height: 310px;line-height: 1;background: #fff;display: inline-block;vertical-align: middle;text-align: left;padding: 16px;position: absolute;left: calc( 50% - 200px );top: calc( 50% - 155px );border-radius: 2px; }
+#closepopup {position: absolute;right: calc( 50% - 175px );top: calc( 50% - 135px );z-index: 10005;color: #f00;font-size: 24px;display: inline-block;}
+.primarybtncls {display: inline-block;padding: 12px 24px;background: #0376B8;color: #fff;font-size: 16px;border-radius: 2px;font-weight: 500;text-transform: uppercase;margin-right: 8px;border: none;}
+.primarybtncls:hover {background: #006196;}
+.createpolltitle {margin-bottom: 24px;margin-top: 0px;}
+#step2a label, #step2b label {margin-top: 24px;font-size: 16px;color: #2a2a2a;margin-bottom: 12px;display: block;}
+#step2a textarea, #step2b textarea {width: 100%;padding: 16px;height: 200px;line-height: 1.5;border: #999 1px solid;border-radius: 2px;}
+#step2b input[type=text] {width: 100%;padding: 0 16px;line-height: 48px;border: #999 1px solid;border-radius: 2px;height: 50px;box-sizing: border-box;}
+#step2b .col.l2 {font-size: 16px;padding-top: 18px;}
+.ynoptions label {border: #0376B8 1px solid;padding: 12px;border-radius: 2px;color: #0376B8 !important;font-weight: 500;}
+.greenbtn {background: #18ba71;}
+.greenbtn:hover {background: #259e68;}
+.maroonbtn {background: #d00;}
+.maroonbtn:hover {background: #300;}
+.optiontopmar {margin-top: 40px;}
+
+/* ----------------------------------- BODY ENDS HERE ----------------------------------- */
+
+/* ----------------------------------- FOOTER STARTS HERE ----------------------------------- */
+
+#footer {font-size: 12px;position: fixed;left: auto;bottom: 40px;}
+#footer p {margin-top: 20px;}
+#footer a {color: #666;text-decoration: underline;}
+#mobilefoot {display: none;}
+
+/* ------------------------------------ FOOTER ENDS HERE ------------------------------------ */
+
+@media screen and (max-width:992px) {
+    .personalinks ul {width: 100%;bottom: 0;left: 0;z-index: 101;background: #333;height: auto;top: auto;text-align: center;}
+    .personalinks ul li {display: inline-block;float: none;clear: none;margin: 0;width: 24%;border-left: #444 1px solid;}
+    .personalinks ul li:first-child {border: none;}
+    .personalinks ul li a {color: #fff;padding: 8px 0;display: block;text-align: center;font-size: 12px;}
+    .personalinks ul li a:hover {color: #0376b8;}
+    .personalinks ul li a i {font-size: 20px;clear: both;display: block;margin: 0 0 4px;}
+    .pollholderrightpad {padding-right: 0;}
+}
+@media screen and (max-width:768px) {
+    .topnav ul li a {font-size: 0;}
+    .topnav ul li a i {font-size: 16px;}
+    .loginregholder {padding-left: 0;padding-right: 0;}
+    #footer {display: none;}
+    .right-panel {display: none;}
+    .pollmeta a {font-size: 8px;margin-right: 8px;}
+    .pollblock h6 {font-size: 16px;padding: 8px 16px;}
+    .pollholder, .pollmeta {padding: 8px;}
+    .bigscreen {display: none !important;}
+    .smallscreen {display: block !important;}
+    .pollblock h6 span samp, .pollblock h6 span a {font-size: 0;text-align: center;height: 24px;width: 24px;line-height: 24px;padding: 0 !important;}
+    .pollblock h6 span samp i, .pollblock h6 span a i {font-size: 16px;display: inline-block;margin: 0;line-height: 24px;}
+    .pollblock h6 samp.label {top: 4px;}
+    #mobilefoot {display: block;}
+    #mobilefoot #footer {position: static;padding: 16px;display: block !important;}
+    #mobilefoot #footer p {margin-top: 12px;line-height: 1;vertical-align:top;}
+    #mobilefoot #footer a {display: inline-block;color: #666;font-size: 10px;height: auto;line-height: 1;vertical-align:top;}
+    #profilelinks {position: fixed;left: 0;top:64px;z-index: 101;height: 100%;max-height:none;width: 100%;padding-bottom:52px;}
+    #notifications {position: fixed;left: 0;top:64px;z-index: 101;height: 100%;max-height:none;width: 100%;padding-bottom:52px;}
+    #profilelinks ul li a {font-size: 16px;}
+    #notifications ul li a {font-size: 14px;}
+    #profilelinks #footer {margin-top: 32px;}
+    .primarybtncls {display: block;padding: 12px 24px;width: 100%;margin: 0 0 12px 0;text-align: center;}
+    #step2b .col.l2 {padding-bottom: 12px;}
+    #wrapper {padding:60px 0 40px 0;}
+}
+@media screen and (max-width:400px) {
+    .popupin form {left: 2.5%; }
+    .loginregholder p.loginbtn {text-align: center;}
+}
