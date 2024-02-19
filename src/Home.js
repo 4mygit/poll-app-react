@@ -14,12 +14,16 @@ function Home(){
     localStorage.setItem('user-token', 'jjjj');
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const checkUserToken = () => {
-        const userToken = localStorage.getItem('user-token');
+        const userToken = localStorage.getItem('ntoken');
         if (!userToken || userToken === 'undefined') {
             setIsLoggedIn(false);
-            return navigate('/yesno');
-        }
+            console.log('No token')
+            return navigate('/login');
+        }else{
         setIsLoggedIn(true);
+        console.log('Token found')
+        console.log(userToken)
+        }
     }
     useEffect(() => {
             checkUserToken();

@@ -19,7 +19,8 @@ import CreatePoll from './CreatePoll'
 import PollForm from './PollForm';
 import YesnoForm from './YesnoForm';
 import Login from './Login';
-
+import {action as Logout} from './logout'
+import LinkLogout from './LinkLogout'
 
 import Errorpage from './error'
 
@@ -32,8 +33,10 @@ const router = createBrowserRouter([
   {path: '/plform', element: <PollForm/>},
   {path: '/yesno', element: <YesnoForm/>},
   {path: '/login', element: <Login/>},
+  {path: '*', element: <Errorpage/>},
+  {path: '/logout',action:Logout},
   
-  {path: '*', element: <Errorpage/>}
+
 
 ])
 

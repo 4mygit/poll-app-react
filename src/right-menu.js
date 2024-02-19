@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useState} from "react";
 
-function RightPanel(props){
+function RightMenu(props){
     const [pollDataObject, setpollDataObject] = useState([])
       useEffect( () => {
 
@@ -27,7 +27,7 @@ function RightPanel(props){
                            
                             <ul className="separator">
                             <li><div>{props.item}</div></li>
-                            {pollDataObject.map(d => (<li key={d.id}><a href="#">{d.pollname}</a></li>))}   
+                            {props.pdata.map(d => (<li key={d.id}><a href="#">{d.pollname}</a></li>))}   
 
                             
                         
@@ -39,4 +39,4 @@ function RightPanel(props){
     );
 }
 
-export default RightPanel;
+export default RightMenu;

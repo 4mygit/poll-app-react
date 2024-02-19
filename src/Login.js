@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, redirect } from 'react-router-dom';
 import { useRef, useState } from 'react';
 
 
@@ -6,7 +6,9 @@ import LeftPanel from './left-panel';
 import RightPanel from './right-panel';
 import Header from './header';
 import { getAuthToken } from './util/auth';
+
 function Login(){
+
 
     const [inputFields, setInputFields] = useState([
         { name: '', salary: '' }
@@ -24,7 +26,8 @@ function Login(){
             });
          const data = await response.json();
          console.log(data.token)
-         localStorage.setItem('token',data.token)
+         localStorage.setItem('ntoken',data.token)
+         //return redirect('/yesno')
      }
      
      const formSubmission = event =>{

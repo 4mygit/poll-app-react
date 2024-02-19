@@ -2,6 +2,9 @@ import logo from './images/logo.png';
 import icon from './images/icon.png';
 import dp from './images/dp.png';
 
+import action from  './logout';
+import { Form } from 'react-router-dom';
+import LinkLogout from './LinkLogout'
 
 
 
@@ -21,7 +24,17 @@ function Header(){
                                     
                                 </div>
                             </li>
-                            <li id="toggleprofile"><a href="#!"><img src={dp} alt=""/> <i className="fas fa-sort-down"></i></a>
+                            <li id="viewnotifications"><Form action="/logout" method="post"><button> Logout</button></Form>
+                                <div id="notifications">
+                                    
+                                </div>
+                            </li>
+                            <li id="viewnotifications"><a href="#" onClick={LinkLogout}>Logout</a>
+                                <div id="notifications">
+                                    
+                                </div>
+                            </li>
+                           <li id="toggleprofile"><a href="#!" onClick={action}><img src={dp} alt=""/> <i className="fas fa-sort-down"></i></a>
                                 <div id="profilelinks">
                                     <div id="mobilefoot">
                                     </div>
